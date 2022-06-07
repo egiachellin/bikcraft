@@ -6,7 +6,7 @@
 
 body {
   font-family: "Arial", "Helvetica", "sans-serif";
-  color: var(cor-11)
+  color: var(cor-11);
 }
 
 ul {
@@ -21,4 +21,8 @@ a {
 img {
   max-width: 100%;
   display: block;
+}
+
+img[src$=".jpg"] {
+  border-radius: 4px;
 }
