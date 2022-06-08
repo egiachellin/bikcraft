@@ -1,20 +1,17 @@
 .tecnologia-bg {
-  /* margin-top: 120px; */
-  /* gap: 20px; */
   background-color: var(--cor-11);
-  box-shadow: inset 0 80px blue;
+  box-shadow: inset 0 80px var(--cor-0), inset 0 -80px var(--cor-0);
 }
 
 .tecnologia {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
-  padding: 80px 0px;
 }
 
-/* .tecnologia-conteudo {
-  grid-column: 1;
-} */
+.tecnologia-conteudo {
+  padding: 160px 0px;
+}
 
 .tecnologia-conteudo > span {
   display: block;
@@ -33,21 +30,22 @@
   margin-bottom: 80px;
 }
 
-.acessorios-item {
+.tecnologia-vantagens {
   display: flex;
   gap: 40px;
-  background-color: aqua;
 }
 
-.acessorios-item img {
+.tecnologia-vantagens img {
+  width: 24px;
   margin-bottom: 8px;
 }
 
-.acessorios-item h3 {
+.tecnologia-vantagens h3 {
+  width: max-content;
   margin-bottom: 8px;
 }
 
-.acessorios-item p {
+.tecnologia-vantagens p {
   margin-bottom: 8px;
 }
 
@@ -56,4 +54,32 @@
   height: 100%;
   object-fit: cover;
   object-position: left;
+}
+
+@media (max-width: 800px) {
+  .tecnologia-bg {
+    box-shadow: initial;
+  }
+
+  .tecnologia {
+    grid-template-columns: 1fr;
+  }
+
+  .tecnologia-conteudo {
+    padding: 60px 0;
+  }
+
+  .tecnologia-imagem {
+    display: none;
+  }
+
+  .tecnologia a {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .tecnologia-vantagens {
+    flex-direction: column;
+  }
 }
