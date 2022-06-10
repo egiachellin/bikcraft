@@ -1,7 +1,10 @@
+.depoimento-bg {
+  background-color: var(--cor-p1);
+}
+
 .depoimento {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background-color: var(--cor-p1);
 }
 
 .depoimento img {
@@ -16,7 +19,7 @@
 }
 
 .depoimento-conteudo p {
-  font: 900 2.25rem/1.33 "Merriweather", serif;
+  font: 900 2rem/1.33 "Merriweather", serif;
   margin-bottom: 32px;
   position: relative;
   max-width: 32ch;
@@ -38,7 +41,17 @@
   position: absolute;
 }
 
-.depoimento-conteudo > span {
-  display: block;
-  margin-bottom: 60px;
+@media (max-width: 800px) {
+  .depoimento {
+    grid-template-columns: 1fr;
+  }
+
+  .depoimento-conteudo {
+    padding: 40px 20px;
+    justify-self: center;
+  }
+
+  .depoimento img {
+    max-height: 200px;
+  }
 }
