@@ -1,9 +1,10 @@
 @import "/css/global/global.css";
-@import "/css/utilidades/cores.css";
-@import "/css/utilidades/tipografia.css";
-@import "/css/utilidades/componentes.css";
 @import "/css/global/header.css";
 @import "/css/global/footer.css";
+
+@import "/css/utilidades/componentes.css";
+@import "/css/utilidades/cores.css";
+@import "/css/utilidades/tipografia.css";
 
 @import "/css/home/introducao.css";
 @import "/css/home/tecnologia.css";
@@ -11,7 +12,7 @@
 @import "/css/home/depoimento.css";
 @import "/css/home/seguros.css";
 
-@import "/css/componentes.css";
 @import "/css/bicicletas/bicicletas-lista.css";
+@import "/css/bicicletas/bicicletas.css";
 
 @import "/css/termos/termos.css";
