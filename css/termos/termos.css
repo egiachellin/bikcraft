@@ -1,21 +1,17 @@
-.titulo-bg {
-  background-color: var(--cor-11);
+.termos {
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
-.titulo {
-  padding-top: 60px;
-  padding-bottom: 60px;
+.termos h2 {
+  margin-bottom: 20px;
 }
 
-.termos-conteudo {
-  margin: 120px 0px;
-  max-width: 700px;
-}
-
-.termos-conteudo h3 {
+.termos p + h2 {
   margin-top: 40px;
 }
 
-.termos-conteudo p {
-  margin-top: 20px;
+.termos p {
+  max-width: 75ch;
+  margin-bottom: 24px;
 }
