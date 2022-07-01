@@ -18,6 +18,7 @@
   overflow-x: auto;
 }
 
+/*padding left/right foram zerados para remover o efeito de 'vazando' a imagem do container*/
 #bicicleta .bicicletas-lista ul {
   padding: 0px 0px 20px 0px;
 }
