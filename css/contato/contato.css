@@ -1,0 +1,25 @@
+#contato {
+  background-color: var(--cor-1);
+}
+
+.contato {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 60px;
+}
+
+.contato-conteudo {
+  background-color: var(--cor-12);
+  padding: 60px;
+}
+
+.contato-dados h2 {
+  margin-bottom: 60px;
+}
+
+.contato-conteudo img {
+  display: inline-block;
+}
+
+.contato-conteudo li {
+}
