@@ -25,3 +25,24 @@ function ativaProduto(parametro) {
 }
 
 parametros.forEach(ativaProduto);
+
+// Ao clicar em uma pergunta na página de Seguros, exibe a resposta da pergunta
+
+const perguntasFrequentes = document.querySelectorAll(".perguntas button");
+
+function exibeResposta(event) {
+  const perguntaAtual = event.currentTarget;
+  const controls = perguntaAtual.getAttribute("aria-controls");
+  const resposta = document.getElementById(controls);
+
+  resposta.classList.toggle("mostraMensagem");
+
+  const mensagemAtiva = resposta.classList.contains("mostraMensagem");
+  perguntaAtual.setAttribute("aria-expanded", mensagemAtiva);
+}
+
+function perguntas(pergunta) {
+  pergunta.addEventListener("click", exibeResposta);
+}
+
+perguntasFrequentes.forEach(perguntas);
