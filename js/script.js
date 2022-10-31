@@ -46,3 +46,29 @@ function perguntas(pergunta) {
 }
 
 perguntasFrequentes.forEach(perguntas);
+
+// Ajusta a galeria de imagens para dar enfase à imagem clicada
+
+const galeria = document.querySelectorAll(".bicicleta-imagens img");
+const galeriaContainer = document.querySelector(".bicicleta-imagens");
+
+function trocaImagem(event) {
+  const img = event.currentTarget;
+  const media = window.matchMedia("(min-width: 1000px)").matches;
+
+  if (media) {
+    galeriaContainer.prepend(img);
+  }
+}
+
+function imagens(img) {
+  img.addEventListener("click", trocaImagem);
+}
+
+galeria.forEach(imagens);
+
+// Plugins de Animação
+
+if (window.SimpleAnime) {
+  new SimpleAnime();
+}

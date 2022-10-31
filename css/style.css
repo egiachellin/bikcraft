@@ -8,6 +8,7 @@
 @import "/css/utilidades/cores.css";
 @import "/css/utilidades/tipografia.css";
 @import "/css/utilidades/formulario.css";
+@import "/css/utilidades/animacao.css";
 
 /* Página principal */
 @import "/css/home/introducao.css";
