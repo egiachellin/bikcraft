@@ -45,7 +45,7 @@
       </div>
     </div>
 
-    <form class="orcamento container" action="./orcamento.html">
+    <form class="orcamento container" action="./enviar.php" method="post">
       <div class="orcamento-produto">
         <h2 class="font-1-xs cor-5">Bikcraft ou Seguro?</h2>
 
@@ -152,7 +152,7 @@
           <label for="estado">Estado</label>
           <input type="text" id="estado" name="estado">
         </div>
-        <button class="botao col-2">Solicitar Orçamento</button>
+        <button class="botao col-2" id="botaoOrcamento">Solicitar Orçamento</button>
       </div>
     </form>
   </main>
@@ -196,6 +196,7 @@
   </footer>
 
   <script src="./js/script.js"></script>
+  <script src="./js/formulario.js"></script>
 </body>
 
 </html>
